@@ -1,4 +1,4 @@
-var Numbers = [1,2,3,4]
+// var Numbers = [1,2,3,4]
 // var i = 0;
 //
 // while(Numbers[i]){
@@ -18,12 +18,12 @@ var Numbers = [1,2,3,4]
 //
 // console.log(timesTwo([1,2,3,4]));
 
-function (timesTwo){
-  return element*2
-}
-
-Numbers = Numbers.map(timesTwo);
-console.log(Numbers)
+// function (timesTwo){
+//   return element*2
+// }
+//
+// Numbers = Numbers.map(timesTwo);
+// console.log(Numbers)
 
 // Numbers = Numbers.map(function(num){
 //   return num*2;
@@ -66,3 +66,12 @@ console.log(Numbers)
 // birds();
 // birds();
 // birds();
+
+function fact(num){
+  for (var i=num-1;i> 0;i--){
+    var num = num * i;
+
+  }return num;
+
+}
+console.log(fact(5));

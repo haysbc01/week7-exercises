@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html ng-app='countries'>
+  <head>
+    <meta charset="utf-8">
+    <title>Ajax Countries</title>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+
+    <script src="/js/module.js" charset="utf-8"></script>
+    <script src="/js/controller.js"></script>
+  </head>
+  <body ng-controller='countriesController as countries'>
+
+<h1>{{countries.greeting}}</h1>
+
+
+
+    <button type="button" name="button" ng-click='countries.countries()'>Load Countries</button>
+
+<input type="text" name="" value="" ng-model='countries.search'>
+<button type="button" ng-click='countries.findCountries()' name="button">Search</button>
+
+    <ul >
+      <li ng-repeat='country in countries.data'>
+        <i ng-click=countries.travelThere(country) ng-class="{'fa-map' : country.hasTraveled, 'fa-map-o': !country.hasTraveled }" class="fa" aria-hidden="true"></i>
+
+        {{country.name}}</li>
+    </ul>
+
+  </body>
+</html>

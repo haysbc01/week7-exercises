@@ -52,6 +52,7 @@ console.log('Bonus: coinDeterminer');
 
 
 var coinDeterminer = function (num){
+  console.log(num);
   var coins = [1,5,7,9,11];
   var numCoins = 0;
 
@@ -62,24 +63,19 @@ while(num>0){
       numCoins += 1;
     }
 
+// while(num>0){
+//   for (var i = coins.length-1; i>=0; i--){
+//     if(num = coins[i]){
+//       num = num - coins[i];
+//       numCoins += 1;
+//     }else if(num%coins[i] == coins[i]){
+//       num = num - coins[i];
+//       numCoins +=1;
+//     }else if(num >= coins[i]){
+//       num = num - coins[i];
+//       numCoins += 1;
+//     }
 
-
-    // if(num>=11){
-    //   num = num - 11;
-    //   numCoins = numCoins + 1;
-    // } else if (num>=9){
-    //   num = num -9;
-    //   numCoins = numCoins + 1
-    // } else if (num>=7){
-    //   num = num -7;
-    //   numCoins = numCoins + 1
-    // }else if (num>=5){
-    //   num = num -5;
-    //   numCoins = numCoins + 1
-    // }else {
-    //   num = num -1;
-    //   numCoins = numCoins + 1
-    // }
     console.log(numCoins + " " + num+ ' ' + coins[i])
   }
 console.log(numCoins)
