@@ -1,0 +1,48 @@
+<div id="translate_pg" class="container">
+
+  <h3 class="pgHeader" ng-model="lingo.word">Learn how to say "hello" in another language!</h3>
+
+</div>
+
+<div id="translate_pg2" class="container">
+
+  <input class="chooseTrans" type="text" ng-model="lingo.word" placeholder="What would you like to translate?">
+
+  <select class="chooseTrans" ng-model="lingo.lang">
+      <option value="" selected disabled>Choose a language:</option>
+        <option value="de">German</option>
+         <option value="th">Thai</option>
+         <option value="so">Somali</option>
+         <option value="sk">Slovak</option>
+         <option value="fr">French</option>
+         <option value="es">Spanish</option>
+      </select>
+
+  </div>
+
+  <div id="translate_pg3" class="container">
+    <button class='btn btn-success' ng-click='lingo.translate()'>Translate Now!</button>
+  </div>
+
+  <div id="translate_pg4" class="container">
+    <h1 class='falseAnswer'>{{lingo.resData}}</h1>
+  </div>
+
+
+
+
+
+<!--
+<div class="dropdown">
+  <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+    Dropdown
+    <span class="caret"></span>
+  </button>
+  <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+    <li><a href="#">Action</a></li>
+    <li><a href="#">Another action</a></li>
+    <li><a href="#">Something else here</a></li>
+    <li role="separator" class="divider"></li>
+    <li><a href="#">Separated link</a></li>
+  </ul>
+</div> -->

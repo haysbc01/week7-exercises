@@ -1,0 +1,43 @@
+<div class="container">
+  <div id="noBorder" class="form-control">
+
+
+    <h1 class="pgHeader">{{quiz.greeting}}</h1>
+
+    <h3 class="chooseLang">Which language would you like to study?</h3>
+    <hr>
+    <br>
+  <!--     <input type="text" ng-model="lingo.word"> -->
+  <select class ="form-control" ng-model="quiz.lang">
+     <option value="" selected disabled>Pick a language!</option>
+         <option value="de">German</option>
+         <option value="th">Thai</option>
+         <option value="so">Somali</option>
+         <option value="sk">Slovak</option>
+         <option value="fr">French</option>
+         <option value="es">Spanish</option>
+      </select>
+
+    <br>
+    <br>
+
+  <div ng-repeat='words in quiz.question.words'>
+    <h3 ng-model='quiz.words'> What is the word for "{{words.word}}"? </h3>
+      <br>
+      <input ng-class='{green: words.correct === true, red: words.correct === false}' class="quizAnswer" placeholder="answer here" type="text" ng-model='words.answer'>
+      <h3 class="falseAnswer" ng-show='words.correct === false'>The correct answer is "{{words.correctAnswer}}"</h3>
+    </div>
+    <br>
+
+    <br>
+    <!-- <div ng-repeat='trans in quiz.resData'>
+
+      <h1>{{trans.translatedText}}</h1>
+    </div> -->
+    <br>
+
+    <button class='btn btn-success' ng-click='quiz.translate()'>Check Your Quiz Results!</button>
+    <br>
+    <br>
+
+<!--     <h1>{{quiz.resData}}</h1> -->

@@ -1,8 +1,8 @@
 {
-  "name": "lingo",
+  "name": "node.lingo",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "routes.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -12,6 +12,8 @@
     "body-parser": "^1.17.1",
     "colors": "^1.1.2",
     "express": "^4.15.2",
-    "google-translate": "^2.0.4"
+    "google-translate": "^2.0.4",
+    "mongoose": "^4.9.0",
+    "morgan": "^1.8.1"
   }
 }

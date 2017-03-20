@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html ng-app="lingoMod" lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.css">
+  <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Abril+Fatface" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Amatic+SC" rel="stylesheet">
+
+  <link rel="stylesheet" href="/css/lingo.css">
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular-route.js"></script>
+
+  <script src="/js/factory.js"></script>
+  <script src="/js/module.js"></script>
+  <script src="/js/progress_controller.js"></script>
+  <script src="/js/quiz_controller.js"></script>
+  <script src="/js/translate_controller.js"></script>
+
+  <title>Say Hello</title>
+
+</head>
+
+
+<body>
+
+
+  <div class="jumbotron" id="header">
+    <div class="container">
+      <p class="jumboGreet">
+        Welcome to Say "Hello!"
+      </p>
+    </div>
+  </div>
+
+
+
+  <nav class="navbar navbar-default">
+  <div class="container-fluid pull-right">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="btn btn-info navbar-btn"><a ng-href="#/">Translate</a></button>
+      <button type="button" class="btn btn-info navbar-btn"><a ng-href="#/quiz">Quiz</a></button>
+      <button type="button" class="btn btn-info navbar-btn"><a ng-href="#s/progress">Progress</a></button>
+    </div>
+    </div>
+  </nav>
+
+
+
+
+  <ng-view></ng-view>
+
+</body>
+
+</html>
